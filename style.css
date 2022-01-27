@@ -234,6 +234,9 @@ button:hover {
 .features {
     position: relative;
 }
+.features .address-margin {
+    margin-top: 30px;
+}
 .contact {
     position: relative;
 }
@@ -244,7 +247,8 @@ button:hover {
     text-align: center;
 }
 .icons {
-   
+    display: flex;
+    justify-content: center;
     outline: #ddd 1px solid;
     border-radius: 50%;
     width: 70px;
@@ -255,13 +259,12 @@ button:hover {
     color: red;
     margin: 0 auto;
 }
-.icons li {
-    /* opacity: 0.1; */
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-}
 
+.src-icons {
+    color: #f54e64;
+    font-size: 30px;
+    font-weight: bold;
+}
 .flex1-service:hover .icons  {
     background-color: red;
     color: white;
@@ -300,7 +303,7 @@ a:active {
     height: 270px;
     box-shadow: rgb(198 198 198 / 30%) 0px 2px 18px 0px;
     transition: all 0.3s ease 0s;
-    text-align: center;
+    /* text-align: center; */
     margin: 15px 0px;
     padding: 20px;
     
@@ -309,7 +312,7 @@ a:active {
     box-shadow: 0 10px 28px 0 rgb(198 198 198 / 30%);
     transition: all .3s;
 }
-.flex1-service a{
+.services .flex1-service a{
     text-transform: uppercase;
     font-size: 16px;
     color: #585b60;
@@ -318,8 +321,21 @@ a:active {
     color: #f54e64;
     text-decoration: none;
 }
-
-.feature-sct {
+.features .flex1-service {
+    height: 150px;
+    
+}
+.features h4 {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+/* .feature-sct {
     padding-left: 15px;
     padding-right: 15px;
     padding-left: 15px;
@@ -327,35 +343,32 @@ a:active {
     display: flex;
     flex-direction: column; 
     justify-content: center;
-    /* align-items: center; */
-}
-/* .feature-sct::after {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\fa fa-rocket";
-} */
-/* .feature-sct::before {
-    font-family: "Font Awesome 5 Free"; 
-    font-weight: 900;
-     content: "\f007";
-  } */
-.features .flex1-service {
-    height: 50%;
-    /* width: 80%; */
-   
-}
+    /* align-items: center; 
+}*/
+
+
+
 .features a {
     text-transform: capitalize;
-    text-align: center;
+
 }
-.features p {
-    /* width: 70%; */
+.lft-sct{
+    text-align: right;
+}
+.lft-sct a {
+    padding: 3px;
+}
+.rg-sct {
     text-align: left;
 }
-  .team1 {
+.rg-sct a {
+    padding-left: 3px;
+}
+
+.team1 {
       text-align: left;
-  }
-  .team-title {
+}
+.team-title {
     margin-top: -5px;
     font-size: 15px;
   }
